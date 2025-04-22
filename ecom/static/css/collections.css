@@ -1,0 +1,35 @@
+/* collections.css */
+.hero-section {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    padding: 100px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
