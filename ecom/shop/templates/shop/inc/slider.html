@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Looping Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Bootstrap Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="{% static 'images/1.jpg' %}" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Latest Fashion Trends</h5>
+          <p>Discover the newest styles and must-have outfits for every season.</p>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="{% static 'images/2.jpg' %}" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Exclusive Deals & Discounts</h5>
+          <p>Shop now and enjoy unbeatable prices on your favorite brands.</p>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="{% static 'images/3.jpg' %}" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Premium Electronics</h5>
+          <p>Upgrade your lifestyle with top-rated gadgets and smart appliances.</p>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <img src="{% static 'images/4.jpg' %}" class="d-block w-100" alt="Slide 4">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fresh Groceries Delivered</h5>
+          <p>Get high-quality groceries and organic products at your doorstep.</p>
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <img src="{% static 'images/5.jpg' %}" class="d-block w-100" alt="Slide 5">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Home Essentials & Decor</h5>
+          <p>Transform your home with stylish and functional home appliances.</p>
+        </div>
+      </div>
+      <!-- Slide 6 -->
+      <div class="carousel-item">
+        <img src="{% static 'images/6.jpg' %}" class="d-block w-100" alt="Slide 6">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fast & Secure Shipping</h5>
+          <p>Enjoy hassle-free shopping with quick delivery and easy returns.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS (with Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
