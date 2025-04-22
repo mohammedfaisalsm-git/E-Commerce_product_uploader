@@ -1,0 +1,47 @@
+{% extends 'shop/layouts/main.html' %}
+{% block title %}
+  Registration | ShopKart
+{% endblock title %}
+{% block content %}
+  <!-- Hero Section with Animation -->
+  <section class="py-5 text-center container" style="margin-top:70px;">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light animate__animated animate__fadeInDown">Welcome to QuickKart</h1>
+        <p class="lead text-muted animate__animated animate__fadeInUp animate__delay-1s">
+          Discover a world of premium products at unbeatable prices. Shop the latest trends in fashion, electronics, home essentials, and more!
+        </p>
+        <p class="animate__animated animate__fadeInUp animate__delay-2s">
+          <a href="{% url 'collections' %}" class="btn btn-primary my-2">Explore Collections</a>
+          <a href="{% url 'register' %}" class="btn btn-secondary my-2">Join Now</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section with Hover Effects -->
+  <section class="bg-light py-4 my-5" style="min-height:600px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="mb-3">Shop by Category</h4>
+          <hr style="border-color:#b8bfc2;">
+          {% include 'shop/inc/message.html' %}
+        </div>
+        {% for item in catagory %}
+        <div class="col-md-4 col-lg-3">
+          <div class="card my-3 animate__animated animate__fadeIn">
+            <img src="{{item.image.url}}" class="card-image-top img-fluid" alt="Categories" style="height: 200px; object-fit: cover;">
+            <a href="{% url 'collections' item.name %}" class="text-decoration-none">
+              <div class="card-body">
+                <h5 class="card-title text-primary">{{ item.name }}</h5>
+                <p class="card-text text-muted">{{ item.description }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock content %}
