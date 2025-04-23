@@ -19,30 +19,32 @@ This project is developed using the Django framework. It helps in uploading prod
    ```bash
    git clone https://github.com/yourusername/ecommerce-product-uploader.git
    cd ecommerce-product-uploader
-Create and activate virtual environment
-
+2.Create and activate virtual environment
 
 python -m venv env
 source env/bin/activate   # On Windows use `env\Scripts\activate`
-Install dependencies
 
+3.Install dependencies
 
 pip install -r requirements.txt
-Run migrations
 
+
+4.Run migrations
 
 python manage.py migrate
-Create superuser (for admin login)
 
+5.Create superuser (for admin login)
 
 python manage.py createsuperuser
-Start the development server
 
+6.Start the development server
 
 python manage.py runserver
-Open your browser and go to http://127.0.0.1:8000/admin to upload products.
 
-📁 Folder Structure
+
+7.Open your browser and go to http://127.0.0.1:8000/admin to upload products.
+
+📁Folder Structure
 
 ecommerce-product-uploader/
 ├── manage.py
@@ -57,6 +59,4 @@ ecommerce-product-uploader/
 
 
 
-📄 License
-This project is open-source and available under the MIT License.
 
